@@ -7,7 +7,7 @@
 
 Command line arguments parser.
 
-options: 
+options:   
   -b, --bucket_name BUCKET_NAME  
   -n, --user_name USER_NAME  
   -g, --get_policy      Get current policy  
@@ -25,3 +25,29 @@ The access key, secret access key and endpoint can also be defined as environmen
 * **S3_SECRET_KEY**  
 * **S3_ENDPOINT**  
  
+
+## Example usages
+
+1. List bucket(s)
+```{bash}
+s3.py -b <BUCKET_NAME> -l
+```
+2. Get bucket policy
+```{bash}
+s3.py -b <BUCKET_NAME> -g
+```
+
+3. Set bucket policy for user
+```{bash}
+s3.py -b <BUCKET_NAME> -n <USERNAME> -t 1
+```
+
+4. Delete bucket policy for user
+```{bash}
+s3.py -b <BUCKET_NAME> -n <USERNAME> -d
+```
+
+5. Delete all bucket policies 
+```{bash}
+s3.py -b <BUCKET_NAME> -d
+```
