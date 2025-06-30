@@ -51,3 +51,13 @@ s3.py -b <BUCKET_NAME> -n <USERNAME> -d
 ```{bash}
 s3.py -b <BUCKET_NAME> -d
 ```
+
+
+## Dependencies
+
+This file depends on a view python packages that can be installed with your favourite package manager  
+
+   * anytree>=2.13.0
+   * cloudpathlib>=0.21.1
+   * jinja2>=3.1.6
+   * typed-argument-parser>=1.10.1
