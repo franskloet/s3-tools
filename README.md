@@ -52,7 +52,6 @@ s3.py -b <BUCKET_NAME> -n <USERNAME> -d
 s3.py -b <BUCKET_NAME> -d
 ```
 
-
 ## Dependencies
 
 This file depends on a view python packages that can be installed with your favourite package manager  
@@ -61,3 +60,10 @@ This file depends on a view python packages that can be installed with your favo
    * cloudpathlib>=0.21.1
    * jinja2>=3.1.6
    * typed-argument-parser>=1.10.1
+
+<br>
+
+# Binary version
+## s3-tool 
+For convenience, a binary version of the script is also available. It can be downloaded from the releases section of this repository. The binary version is  
+built using PyInstaller and includes all the necessary dependencies. It can be run directly without the need for a Python environment or additional packages.
